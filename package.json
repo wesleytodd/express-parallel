@@ -1,0 +1,11 @@
+{
+  "name": "express-parallel",
+  "version": "1.0.0",
+  "description": "Run middleware in parallel with timeouts",
+  "main": "parallel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hunter Loftis <hunter@hunterloftis.com>",
+  "license": "ISC"
+}
