@@ -1,11 +1,31 @@
 {
-  "name": "express-parallel",
-  "version": "1.0.0",
-  "description": "Run middleware in parallel with timeouts",
-  "main": "parallel.js",
+  "name": "parallel-middleware",
+  "version": "0.0.0",
+  "description": "Run middleware in parallel",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && mocha",
+    "prepublish": "npm test",
+    "postpublish": "git push && git push origin --tags"
   },
-  "author": "Hunter Loftis <hunter@hunterloftis.com>",
-  "license": "ISC"
+  "keywords": [
+    "middleware",
+    "paralle",
+    "express"
+  ],
+  "author": [
+    {
+      "name": "Hunter Loftis",
+      "email": "hunter@hunterloftis.com"
+    },
+    {
+      "name": "Wes Todd",
+      "email": "wes@wesleytodd.com"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.5.3",
+    "standard": "^10.0.3"
+  }
 }
