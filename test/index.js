@@ -42,4 +42,18 @@ describe('parallel-middleware', function () {
       done()
     })
   })
+  it('should allow for sync middleware', function (done) {
+    var req = {}
+    function syncMw (req, res, next) {
+      req.called = (req.called || 0) + 1
+      req.finished = (req.finished || 0) + 1
+      next()
+    }
+    parallel([syncMw, makeMiddleware(), makeMiddleware(25, new Error('test')), makeMiddleware(50)])(req, null, function (err) {
+      assert(err)
+      assert.equal(req.called, 4)
+      assert.equal(req.finished, 3)
+      done()
+    })
+  })
 })

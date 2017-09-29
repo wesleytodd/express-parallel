@@ -11,7 +11,7 @@ module.exports = function parallelMiddleware (middlewares, options) {
       }, opts.timeout)
     }
 
-    for (var i = 0; i < pending; i++) {
+    for (var i = 0; i < middlewares.length; i++) {
       middlewares[i](req, res, onProgress)
     }
 
