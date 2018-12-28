@@ -4,7 +4,10 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/parallel-middleware.svg)](https://npmjs.org/package/parallel-middleware)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/standard/standard)
 
-Run express style middleware in parallel, thats all.
+Run express style middleware in parallel, that's all.
+
+Will call `next` only once, either on the first encountered error, the (optional) timeout is reached, or
+all of the middleware have called their own `next`.
 
 ## Install
 

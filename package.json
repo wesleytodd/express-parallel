@@ -10,7 +10,7 @@
   },
   "keywords": [
     "middleware",
-    "paralle",
+    "parallel",
     "express"
   ],
   "author": [
@@ -27,5 +27,13 @@
   "devDependencies": {
     "mocha": "^3.5.3",
     "standard": "^10.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleytodd/parallel-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wesleytodd/parallel-middleware/issues"
+  },
+  "homepage": "https://github.com/wesleytodd/parallel-middleware#readme"
 }
